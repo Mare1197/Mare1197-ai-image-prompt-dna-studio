@@ -1,0 +1,19 @@
+{
+  "project": "AI Image Prompt DNA Studio",
+  "files": [
+    "AGENTS.md",
+    "CODEX-CONTINUE-PROMPT.md",
+    "docs/specifications/00-PROJECT-INDEX.md",
+    "docs/specifications/01-PRODUCT-REQUIREMENTS.md",
+    "docs/specifications/02-PHASED-IMPLEMENTATION.md",
+    "docs/specifications/03-PROMPT-DNA-AND-CORE-ENGINES.md",
+    "docs/specifications/04-DATABASE-AND-PERSISTENCE.md",
+    "docs/specifications/05-UI-AND-WORKSPACE.md",
+    "docs/specifications/06-VISUAL-BANKS.md",
+    "docs/specifications/07-CHARACTERS-WARDROBE-MONSTERS.md",
+    "docs/specifications/08-VEHICLES-WRAPS-LIVERIES-DECALS.md",
+    "docs/specifications/09-HISTORY-REFERENCES-RESULTS.md",
+    "docs/specifications/10-ACCEPTANCE-CRITERIA.md"
+  ],
+  "note": "Copy files into repository root, preserving paths. Use CODEX-CONTINUE-PROMPT.md to continue in Codex."
+}
