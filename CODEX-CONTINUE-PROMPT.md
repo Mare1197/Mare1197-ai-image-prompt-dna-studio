@@ -1,6 +1,20 @@
 # Continue Building AI Image Prompt DNA Studio
 
-Work in the repository that already contains the AI Image Prompt DNA Studio implementation.
+Work in the local repository that already contains the AI Image Prompt DNA Studio implementation and completed Phase 0–1 work.
+
+## First: safely synchronize the remote specification files
+
+Before changing implementation code:
+
+1. Inspect the current branch, remotes, working tree, commits and uncommitted changes.
+2. Do not reset, delete, overwrite or discard any local Phase 0–1 work.
+3. Confirm that the GitHub remote points to `Mare1197/Mare1197-ai-image-prompt-dna-studio`.
+4. Fetch `origin/main`.
+5. Integrate the remote documentation-only commits into the current local branch.
+6. If Git reports unrelated histories because the local project and empty remote were initialized separately, merge them safely with unrelated-history support rather than resetting either history.
+7. Resolve conflicts by preserving the local implementation and the remote specification files. The specification package must remain under the paths listed in `SPEC-PACK-MANIFEST.json`.
+8. Do not force-push or rewrite existing local history merely to make synchronization easier.
+9. Run `git status` after integration and confirm the working tree and branch state before implementation continues.
 
 Read `AGENTS.md` and `docs/specifications/00-PROJECT-INDEX.md` first. Then read the existing handoff files: `docs/current-state.md`, `docs/architecture.md`, `docs/data-model.md`, `docs/implementation-log.md`, `docs/known-issues.md`, `docs/next-phase.md`, and `docs/testing.md` when present.
 
@@ -30,4 +44,4 @@ At each phase boundary update:
 - `docs/next-phase.md`
 - `docs/testing.md`
 
-Begin now by reviewing Phase 0 and Phase 1, state what is valid and what needs repair, perform those repairs, and then continue from the first incomplete phase. Do not stop merely to ask whether you should continue.
+Begin now by safely integrating the remote specification files, then review Phase 0 and Phase 1, state what is valid and what needs repair, perform those repairs, and continue from the first incomplete phase. Do not stop merely to ask whether you should continue.
