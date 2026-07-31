@@ -1,10 +1,12 @@
 {
   "project": "AI Image Prompt DNA Studio",
-  "purpose": "Technology-neutral product specification for an AI builder",
+  "intended_repository": "Mare1197/Mare1197-ai-image-prompt-dna-studio-instructions",
+  "purpose": "Technology-neutral product specification and control point for an AI builder",
   "files": [
     "README.md",
     "AGENTS.md",
     "AI-BUILDER-START-PROMPT.md",
+    "design images/README.md",
     "docs/specifications/00-PROJECT-INDEX.md",
     "docs/specifications/01-PRODUCT-REQUIREMENTS.md",
     "docs/specifications/02-BUILDER-WORKFLOW.md",
@@ -16,9 +18,15 @@
     "docs/specifications/08-VEHICLES-WRAPS-LIVERIES-DECALS.md",
     "docs/specifications/09-HISTORY-REFERENCES-RESULTS.md",
     "docs/specifications/10-ACCEPTANCE-CRITERIA.md",
-    "docs/specifications/11-EXPERIENCE-PERFORMANCE-AND-RECOVERY.md"
+    "docs/specifications/11-EXPERIENCE-PERFORMANCE-AND-RECOVERY.md",
+    "docs/specifications/12-BRANCH-SAFETY-AND-VISUAL-EVIDENCE.md"
   ],
-  "start": "Read AGENTS.md and docs/specifications/00-PROJECT-INDEX.md, then use AI-BUILDER-START-PROMPT.md.",
+  "start": "Read AGENTS.md, docs/specifications/12-BRANCH-SAFETY-AND-VISUAL-EVIDENCE.md, and docs/specifications/00-PROJECT-INDEX.md, then use AI-BUILDER-START-PROMPT.md.",
+  "main_policy": "main is a read-only specification/control point for AI builders unless the user explicitly names main and specifies the exact intended specification change.",
+  "branch_format": "<project-or-design-name>--<ai-model>--<harness>",
   "design_gate": "The builder must present at least four genuinely different UI/UX concepts and receive user approval before choosing the final stack and building the production UI.",
+  "planning_policy": "Use high reasoning effort and provide Recommended, Optional, and Experimental suggestions with benefits and tradeoffs.",
+  "visual_policy": "Use highest-quality practical images; store concepts, approved design, and actual final application screenshots under design images/.",
+  "launch_policy": "Open directly into the main workspace; do not create login, welcome, marketing, onboarding, blocking splash, or mandatory setup pages.",
   "stack_policy": "No technology stack is prescribed by this repository."
 }
