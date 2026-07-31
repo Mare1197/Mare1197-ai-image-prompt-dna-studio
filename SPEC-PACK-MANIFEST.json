@@ -1,11 +1,13 @@
 {
   "project": "AI Image Prompt DNA Studio",
+  "purpose": "Technology-neutral product specification for an AI builder",
   "files": [
+    "README.md",
     "AGENTS.md",
-    "CODEX-CONTINUE-PROMPT.md",
+    "AI-BUILDER-START-PROMPT.md",
     "docs/specifications/00-PROJECT-INDEX.md",
     "docs/specifications/01-PRODUCT-REQUIREMENTS.md",
-    "docs/specifications/02-PHASED-IMPLEMENTATION.md",
+    "docs/specifications/02-BUILDER-WORKFLOW.md",
     "docs/specifications/03-PROMPT-DNA-AND-CORE-ENGINES.md",
     "docs/specifications/04-DATABASE-AND-PERSISTENCE.md",
     "docs/specifications/05-UI-AND-WORKSPACE.md",
@@ -13,7 +15,10 @@
     "docs/specifications/07-CHARACTERS-WARDROBE-MONSTERS.md",
     "docs/specifications/08-VEHICLES-WRAPS-LIVERIES-DECALS.md",
     "docs/specifications/09-HISTORY-REFERENCES-RESULTS.md",
-    "docs/specifications/10-ACCEPTANCE-CRITERIA.md"
+    "docs/specifications/10-ACCEPTANCE-CRITERIA.md",
+    "docs/specifications/11-EXPERIENCE-PERFORMANCE-AND-RECOVERY.md"
   ],
-  "note": "Copy files into repository root, preserving paths. Use CODEX-CONTINUE-PROMPT.md to continue in Codex."
+  "start": "Read AGENTS.md and docs/specifications/00-PROJECT-INDEX.md, then use AI-BUILDER-START-PROMPT.md.",
+  "design_gate": "The builder must present at least four genuinely different UI/UX concepts and receive user approval before choosing the final stack and building the production UI.",
+  "stack_policy": "No technology stack is prescribed by this repository."
 }
