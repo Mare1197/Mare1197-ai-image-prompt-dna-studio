@@ -79,7 +79,22 @@ After design approval, the builder chooses and documents the complete technical 
 
 Choose based on the approved design and product requirements. Briefly justify the decisions. Do not select technology because it appeared in an older prompt.
 
-## Gate 6 — Build in verifiable milestones
+## Gate 6 — Prove the critical workflow
+Before scaling implementation across every feature, build one small end-to-end vertical slice using the approved design and selected architecture.
+
+The slice should prove a realistic core journey such as:
+- Enter and autosave a prompt draft
+- Convert or edit Prompt DNA
+- Add and persist a reference image
+- Create a clean prompt
+- Save a version or variation
+- Restore the same work after reload or restart
+
+The slice must include real data behavior, UI, persistence, recovery, error handling, and tests. Use it to validate the architecture and no-data-loss strategy early. Repair weaknesses before expanding the application.
+
+This is an internal verification gate, not another routine user-approval checkpoint unless the prototype materially departs from the approved design.
+
+## Gate 7 — Build in verifiable milestones
 Break implementation into small end-to-end milestones. Each milestone should deliver a testable slice rather than disconnected layers.
 
 A useful milestone should include the relevant:
@@ -93,7 +108,7 @@ A useful milestone should include the relevant:
 
 Continue through routine milestones without requesting permission after every one.
 
-## Gate 7 — Validate experience and resilience
+## Gate 8 — Validate experience and resilience
 Continuously verify:
 - No prompt, reference, selection, lock, upload, workflow step, or history entry is lost unexpectedly
 - Large banks and image histories remain responsive
@@ -103,7 +118,7 @@ Continuously verify:
 - Provider failures do not corrupt local work
 - Cache invalidation never replaces durable data with stale state
 
-## Gate 8 — Completion
+## Gate 9 — Completion
 The product is complete only when every criterion in `10-ACCEPTANCE-CRITERIA.md` has evidence.
 
 Final delivery must include:
